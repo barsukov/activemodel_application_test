@@ -32,7 +32,7 @@ SponsorpayTest::Application.routes.draw do
   #   end
 
   # Sample resource route with more complex sub-resources
-  #   resources :products do
+  resources :messages
   #     resources :comments
   #     resources :sales do
   #       get 'recent', :on => :collection
@@ -48,7 +48,7 @@ SponsorpayTest::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  root :to => 'messages#new'
 
   # See how all your routes lay out with "rake routes"
 
