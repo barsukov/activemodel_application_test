@@ -1,8 +1,17 @@
 .row
   =link_to 'back to message',new_message_path, :class => 'btn'
-.row-bottom
-  %span.label.label-info
-    =@result_message
-%p
-  .no_offers
-    No offers
+  .row-bottom
+    =get_message_label(@code,@result_message)
+  %p
+    -if @offers
+      -@offers.each do |offer|
+        .offer
+          .title
+            =offer['title']
+          .payout
+            =offer['payout']
+          .thumbnail
+            =offer['thumbnail']
+    -else
+      .no_offers
+        No offers

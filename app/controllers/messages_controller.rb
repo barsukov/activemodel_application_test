@@ -9,11 +9,14 @@ class MessagesController < ApplicationController
       # TODO send message here
       serialized_message = ::MessageSerializer.new @message
       sponsor_pay_response = send_message_to_sponsor_pay serialized_message.as_json
-      if sponsor_pay_response.code == 200
-        @result = JSON.parse sponsor_pay_response
-        @result_message = @result['message']
-        render "messages/message_recieved"
+      @result = JSON.parse sponsor_pay_response
+      @result_message = @result['message']
+      @code = sponsor_pay_response.code
+      if @result['offers']
+        @offers = @result['offers']
       end
+
+      render "messages/message_recieved"
     else
       flash[:error] = "You should fill every fields"
       render :action => 'new'

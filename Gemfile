@@ -20,6 +20,7 @@ group :test do
   gem 'rspec', :require => false
   gem "rspec-rails", :require => false
   gem "webmock"
+  gem 'factory_girl'
   gem "wrong"
 end
 gem "active_model_serializers", "~> 0.7.0"
