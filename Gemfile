@@ -8,6 +8,7 @@ group :assets do
   gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
   gem 'coffee-rails', '~> 3.2.1'
   gem 'therubyracer'
+    gem 'uglifier'
 end
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 gem "haml"

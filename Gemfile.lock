@@ -164,6 +164,9 @@ GEM
       polyglot
       polyglot (>= 0.3.1)
     tzinfo (0.3.38)
+    uglifier (2.3.0)
+      execjs (>= 0.3.0)
+      json (>= 1.8.0)
     webmock (1.15.0)
       addressable (>= 2.2.7)
       crack (>= 0.3.2)
@@ -194,5 +197,6 @@ DEPENDENCIES
   state_machine
   therubyracer
   twitter-bootstrap-rails!
+  uglifier
   webmock
   wrong
