@@ -1,0 +1,3 @@
+class FakePusher < BasePusher
+
+end

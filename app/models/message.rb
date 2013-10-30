@@ -24,9 +24,11 @@ class Message
 
   validates_presence_of :page,:pub0,:uid
 
-  def initialize(attributes = {})
-    attributes.each do |name, value|
-      send("#{name}=", value)
+  def initialize(attributes={})
+    if attributes
+      attributes.each do |name, value|
+        send("#{name}=", value)
+      end
     end
   end
 
