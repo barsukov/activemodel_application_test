@@ -24,6 +24,7 @@ group :test do
   gem 'factory_girl_rails'
   gem "wrong"
 end
+gem 'addressable', :require => 'addressable/uri'
 gem 'unicorn-rails'
 gem "active_model_serializers", "~> 0.7.0"
 group :development do

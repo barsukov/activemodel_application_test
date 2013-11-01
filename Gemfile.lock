@@ -191,6 +191,7 @@ PLATFORMS
 
 DEPENDENCIES
   active_model_serializers (~> 0.7.0)
+  addressable
   coffee-rails (~> 3.2.1)
   factory_girl_rails
   haml
