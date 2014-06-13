@@ -1,4 +1,4 @@
-sponsorpay_test
+Active model application
 ===============
 This application resolve the challenge by the next points:
 1. Create a form asking for the params (uid, pub0 and page)
