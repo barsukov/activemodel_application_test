@@ -1,9 +1,11 @@
 require File.expand_path('../boot', __FILE__)
 
+
+# Pick the frameworks you want:
+require "active_model/railtie"
 require "action_controller/railtie"
 require "action_mailer/railtie"
-require "active_resource/railtie"
-require "rails/test_unit/railtie"
+require "action_view/railtie"
 require "sprockets/railtie"
 
 # Auto-require default libraries and those for the current Rails environment.

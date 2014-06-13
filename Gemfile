@@ -1,14 +1,14 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.9'
+gem 'rails', '4.1.0'
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
-  gem 'coffee-rails', '~> 3.2.1'
+  gem "less-rails"
+  gem 'coffee-rails' 
   gem 'therubyracer'
-    gem 'uglifier'
+  gem 'uglifier'
 end
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 gem "haml"
@@ -26,7 +26,7 @@ group :test do
 end
 gem 'addressable', :require => 'addressable/uri'
 gem 'unicorn-rails'
-gem "active_model_serializers", "~> 0.7.0"
+gem "active_model_serializers"
 group :development do
   gem "pry"
 end
